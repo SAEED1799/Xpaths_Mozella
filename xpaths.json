@@ -1,0 +1,54 @@
+{
+  "q1": {
+    "xpath": "//a[text()='Get Help']",
+    "description": "Find the 'Get Help' link"
+  },
+  "q2": {
+    "xpath": "//input[@placeholder='Search Support']",
+    "description": "Find the 'Search Support' input field"
+  },
+  "q3": {
+    "xpath": "//section[@class='forum--question-list questions']/article[position() =1]",
+    "description": "Find the first question article"
+  },
+  "q4": {
+    "xpath": "//section[@class='forum--question-list questions']/article[position() <= 5]",
+    "description": "Find the first 5 question articles"
+  },
+  "q5": {
+    "xpath": "//section[@class='forum--question-list questions']/article[position() =1]//p[@class='user-meta-asked-by']/text()[2]",
+    "description": "Find the username of the person who asked the first question"
+  },
+  "q6": {
+    "xpath": "//*[@id='questions-list']/section/article[.//li[@class='thread-solved']]",
+    "description": "Find articles that are marked as solved"
+  },
+  "q7": {
+    "xpath": "//section[@class='forum--question-list questions']/article[.//p[@class='user-meta-asked-by']/text()[2][contains(., '1 day ago')]]",
+    "description": "Find articles with questions asked '1 day ago'"
+  },
+  "q8": {
+    "xpath": "//section[@class='forum--question-list questions']/article[.//h2[@class='forum--question-item-heading']//*[contains(text(),'?')]]",
+    "description": "Find articles with question marks in the title"
+  },
+  "q9": {
+    "xpath": "//section[@class='forum--question-list questions']/article[.//p[@class='user-meta-asked-by']//strong[starts-with(translate(.//a/text(), 'd', 'D'), 'D')]]",
+    "description": "Find articles asked by users whose names start with 'D'"
+  },
+  "q10": {
+    "xpath": "//*[@id='questions-list']/section/article[.//span[@class='forum--meta-val'][number(.) >= 2] and .//span[@class='forum--meta-key'][contains(text(), 'replies')]]",
+    "description": "Find articles with 2 or more replies"
+  },
+  "q11": {
+    "xpath": "//section[@class='forum--question-list questions']/article[.//h2[@class='forum--question-item-heading']//*[starts-with(text(), 'P') or starts-with(text(), 'p')]]",
+    "description": "Find articles with titles starting with 'P' or 'p'"
+  },
+  "q12": {
+    "xpath": "//section[@class='forum--question-list questions']/article[.//h2[@class='forum--question-item-heading']/a[string-length(normalize-space(text())) - string-length(translate(normalize-space(text()), ' ', '')) + 1 >= 14]]",
+    "description": "Find articles with titles having 14 or more words"
+  },
+  "q13": {
+    "xpath": "//section[@class='forum--question-list questions']/article[.//li[@class='tag'] and .//*[contains(text(), 'Windows 11')]]",
+    "description": "Find articles tagged with 'Windows 11'"
+  }
+}
