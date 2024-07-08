@@ -46,7 +46,7 @@ This JSON file contains a list of XPath expressions along with descriptions of w
   - **xpath**: `//section[@class='forum--question-list questions']/article[.//h2[@class='forum--question-item-heading']//*[contains(text(),'?')]]`
   - **description**: Find articles with question marks in the title
 
-- **Usernames Start with D**:
+- **Usernames Author Start with D**:
   - **xpath**: `//section[@class='forum--question-list questions']/article[.//p[@class='user-meta-asked-by']//strong[starts-with(translate(.//a/text(), 'd', 'D'), 'D')]]`
   - **description**: Find articles asked by users whose names start with 'D'
 
